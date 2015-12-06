@@ -2,13 +2,9 @@
 <div class="wrapper">
 	<h2>{{page.title}}</h2>
 	<article>
-		{% if page.location %}
-		<span class="location">{{page.location}} • </span>
-		{% endif %}
+		{% if page.location %}<span class="location">{{page.location}} • </span>{% endif %}
 		{{ content }}
-		{% if page.author %}
-		<span class="author">by {{page.author}}</span>
-		{% endif %}
+		{% if page.author %}<span class="author">by {{page.author}}</span>{% endif %}
 	</article>
 </div>
 {% include footer.html %}
