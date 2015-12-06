@@ -7,4 +7,11 @@ $serif: Georgia, Times, 'Times New Roman', serif;
 
 body {
 	font-family: $serif;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+footer {
+	flex: 1;
 }

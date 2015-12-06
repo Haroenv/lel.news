@@ -1,9 +1,11 @@
 ---
-title: "Rogier is mijn favoriete meme"
+title: "Dit is mijn favoriete meme"
 layout: post
 date: 2015-12-06 18:00
-tags: [meme,rogier]
+tags: [meme]
 ---
-# Hello World
+Dag allemaal, dit is de eerste post op {{ site.title }}. We beginnen met deze mooie afbeelding:
 
-text
+![get memed guise](pepe.png)
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolores, quod dolore voluptate excepturi tempora fugiat fugit rerum veniam exercitationem itaque repellat nam distinctio porro. Minima, ipsam temporibus accusantium fugit.
