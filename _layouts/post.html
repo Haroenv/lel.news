@@ -1,8 +1,14 @@
 {% include header.html %}
-<header>
+<div class="wrapper">
 	<h2>{{page.title}}</h2>
-</header>
-<article>
-	{{ content }}
-</article>
+	<article>
+		{% if page.location %}
+		<span class="location">{{page.location}} • </span>
+		{% endif %}
+		{{ content }}
+		{% if page.author %}
+		<span class="author">by {{page.author}}</span>
+		{% endif %}
+	</article>
+</div>
 {% include footer.html %}

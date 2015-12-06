@@ -9,9 +9,40 @@ body {
 	font-family: $serif;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	min-height: 100vh;
+	max-width: 60em;
+	margin: 0 auto;
+	margin: 0 1rem;
+}
+
+article {
+	columns: 1;
+	@media all and (min-width: 25em) {
+		columns: 2;
+	}
+	@media all and (min-width: 40em) {
+		columns: 3;
+	}
+
+	.location {
+		// float: left;
+		font-weight: bold;
+	}
+
+	.author {
+		float: right;
+	}
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.wrapper {
+	flex: 1;
 }
 
 footer {
-	flex: 1;
+	text-align: center;
 }

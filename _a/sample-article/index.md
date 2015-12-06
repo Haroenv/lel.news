@@ -2,6 +2,8 @@
 title: "Dit is mijn favoriete meme"
 layout: post
 date: 2015-12-06 18:00
+author: John Doe
+location: Gent
 tags: [meme]
 ---
 Dag allemaal, dit is de eerste post op {{ site.title }}. We beginnen met deze mooie afbeelding:

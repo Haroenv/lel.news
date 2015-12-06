@@ -1,14 +1,16 @@
 {% include header.html %}
-<article>
+<div class="wrapper">
+	<article>
 	{{ content }}
-</article>
-<section class="articles">
-	<h3>Artikels</h3>
-	{% for post in site.a %}
-	<li>
-		<a href="{{ post.url }}">{{ post.title }}</a>
-		<p>{{ post.content | strip_newlines | strip_html | truncatewords: 20 }}</p>
-	</li>
-	{% endfor %}
-</section>
+	</article>
+	<section class="articles">
+		<h3>Artikels</h3>
+		{% for post in site.a %}
+		<li>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+			<p>{{ post.content | strip_newlines | strip_html | truncatewords: 20 }}</p>
+		</li>
+		{% endfor %}
+	</section>
+</div>
 {% include footer.html %}
