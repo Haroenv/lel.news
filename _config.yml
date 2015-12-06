@@ -1,0 +1,6 @@
+sass:
+  style: compressed
+title: lel news
+collections:
+  a:
+    output: true
