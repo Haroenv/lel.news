@@ -4,6 +4,16 @@
 
 // variable declaration
 $serif: Georgia, Times, 'Times New Roman', serif;
+$dark: #263238;
+
+a {
+	color: #2196F3;
+
+	&:visited {
+		color: #3F51B5;
+	}
+}
+
 
 body {
 	font-family: $serif;
@@ -11,8 +21,43 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	max-width: 60em;
+	padding: 0 1rem;
 	margin: 0 auto;
-	margin: 0 1rem;
+	color: $dark;
+}
+
+h1 {
+	text-align: center;
+
+	a {
+		text-decoration: none;
+		color: $dark !important;
+	}
+}
+
+nav ul{
+	padding: 0;
+	margin: 1rem auto;
+	display: flex;
+	justify-content: center;
+
+	li {
+		list-style-type: none;
+		border: 1px $dark solid;
+		border-right: none;
+		padding: .6em;
+
+		&:first-child {
+			border-top-left-radius: .2em;
+			border-bottom-left-radius: .2em;
+		}
+
+		&:last-child {
+			border-right: 1px solid $dark;
+			border-top-right-radius: .2em;
+			border-bottom-right-radius: .2em;
+		}
+	}
 }
 
 article {
@@ -24,8 +69,8 @@ article {
 		columns: 3;
 	}
 
-	p:first-child {
-		padding-top: 0;
+	p:nth-of-type(1) {
+		margin-top: 0;
 	}
 
 	.location {
@@ -40,6 +85,15 @@ article {
 img {
 	max-width: 100%;
 	max-height: 100%;
+}
+
+.articles {
+	ul  {
+		padding: 0;
+	}
+	li {
+		list-style-type: none;
+	}
 }
 
 .wrapper {
