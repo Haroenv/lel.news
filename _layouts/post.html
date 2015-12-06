@@ -14,11 +14,11 @@
 	        {% for thisTag in page.tags %}
 	            {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
 	                {% if hasSimilar.size == 0 %}
-	                <h4>Meer als dit</h4>
+	                <h4>Meer van dat!</h4>
 	                <ul>
 	                {% endif %}
 	                <li>
-	                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
+	                    <a href="/{{ post.url }}">{{ post.title }}
 	                    {% if post.series %}
 	                        (Series: {{ post.series }})
 	                    {% endif %}
