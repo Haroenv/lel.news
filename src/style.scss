@@ -24,8 +24,11 @@ article {
 		columns: 3;
 	}
 
+	p:first-child {
+		padding-top: 0;
+	}
+
 	.location {
-		// float: left;
 		font-weight: bold;
 	}
 
