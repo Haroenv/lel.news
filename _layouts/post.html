@@ -3,7 +3,12 @@
 	<h2>{{page.title}}</h2>
 	{% if page.date %}<p class="date">{{page.date}}</p>{% endif %}
 
-	{% if page.img %}<img src="{{page.img}}" alt="{{page.title}}" class="main">{% endif %}
+	{% if page.img %}
+	<figure>
+		<img src="{{page.img}}" alt="{{page.title}}" class="main">
+		<figcaption>{{page.caption}}</figcaption>
+	</figure>
+	{% endif %}
 	<article>
 		{% if page.location %}<p class="location">{{page.location}}</p>{% endif %}
 		{{ content }}

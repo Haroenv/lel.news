@@ -1,6 +1,7 @@
 ---
 title: post met afbeelding
 img: test.jpg
+caption: bla bla bla bla over de afbeelding
 date: 2015-12-07 07:00
 layout: post
 ---
