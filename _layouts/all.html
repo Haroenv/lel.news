@@ -10,7 +10,8 @@
 				{% unless post.exclude %}
 				<li>
 					<a href="{{ post.url }}">{{ post.title }}</a>
-					<p>{{ post.content | truncatewords 40 }}</p>
+					<p class="date">{{post.date}}</p>
+					<p>{{ post.content | truncatewords 30 }}</p>
 				</li>
 				{% endunless %}
 			{% endfor %}
