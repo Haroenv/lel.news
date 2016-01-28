@@ -18,10 +18,14 @@ a {
 
 body {
 	font-family: $serif;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	flex-direction: column;
-	min-height: 100vh;
-	max-width: 60em;
+	min-height: 90vh;
+	max-width: 50em;
 	padding: 0 1rem;
 	margin: 0 auto;
 	color: $dark;
@@ -39,7 +43,11 @@ h1 {
 nav ul{
 	padding: 0;
 	margin: 1rem auto;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 
 	li {
@@ -62,11 +70,21 @@ nav ul{
 }
 
 article {
+	-webkit-columns: 1;
+	-moz-columns: 1;
 	columns: 1;
 	@media all and (min-width: 25em) {
+		-webkit-columns: 2;
+		-moz-columns: 2;
 		columns: 2;
+
+		h2:first-of-type {
+			margin-top: 0;
+		}
 	}
 	@media all and (min-width: 40em) {
+		-webkit-columns: 3;
+		-moz-columns: 3;
 		columns: 3;
 	}
 
@@ -84,7 +102,11 @@ article {
 }
 
 figure {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	flex-direction: column;
 
 	figcaption {
@@ -111,12 +133,19 @@ img {
 	}
 	ul  {
 		padding: 0;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: row;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 	li {
 		list-style-type: none;
 		margin: .2em;
+		-webkit-flex: 1 0 10em;
+		-ms-flex: 1 0 10em;
+		flex: 1 0 10em;
 	}
 }
 
@@ -129,12 +158,20 @@ img {
 }
 
 .wrapper {
+	-webkit-flex: 1 0 auto;
+	-ms-flex: 1 0 auto;
 	flex: 1 0 auto;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
 footer {
 	text-align: center;
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
 	flex: 0 0 auto;
 }
