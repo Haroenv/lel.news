@@ -2,7 +2,7 @@
 layout: default
 ---
 <h2>{{page.title}}</h2>
-{% if page.date %}<p class="date">{{page.date}}</p>{% endif %}
+{% if page.date %}<p class="date">{{page.date | date: "%-d %B %Y %-H:%M" }}</p>{% endif %}
 
 {% if page.img %}
 <figure>

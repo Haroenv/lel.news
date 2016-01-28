@@ -70,25 +70,11 @@ nav ul{
 }
 
 article {
-	-webkit-columns: 1;
-	-moz-columns: 1;
-	columns: 1;
-	@media all and (min-width: 25em) {
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		columns: 2;
+	-webkit-column-width: 15em;
+	-moz-column-width: 15em;
+	column-width: 15em;
 
-		h2:first-of-type {
-			margin-top: 0;
-		}
-	}
-	@media all and (min-width: 40em) {
-		-webkit-columns: 3;
-		-moz-columns: 3;
-		columns: 3;
-	}
-
-	p:nth-of-type(1) {
+	h2:nth-of-type(1), p:nth-of-type(1) {
 		margin-top: 0;
 	}
 
