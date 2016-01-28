@@ -1,21 +1,20 @@
-{% include header.html %}
-<div class="wrapper">
-	<div class="intro">
-	{{ content }}
-	</div>
-	<section class="articles">
-		<h3>Artikels</h3>
-		<ul>
-			{% for post in site.a %}
-				{% unless post.exclude %}
-				<li>
-					<a href="{{ post.url }}">{{ post.title }}</a>
-					<p class="date">{{post.date}}</p>
-					<p>{{ post.content | markdownify | strip_html | truncatewords 30 }}</p>
-				</li>
-				{% endunless %}
-			{% endfor %}
-			</ul>
-	</section>
+---
+layout: default
+---
+<div class="intro">
+{{ content }}
 </div>
-{% include footer.html %}
+<section class="articles">
+	<h3>Artikels</h3>
+	<ul>
+		{% for post in site.a %}
+			{% unless post.exclude %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+				<p class="date">{{post.date}}</p>
+				<p>{{ post.content | markdownify | strip_html | truncatewords 30 }}</p>
+			</li>
+			{% endunless %}
+		{% endfor %}
+		</ul>
+</section>

@@ -1,6 +1,6 @@
 # lel.news
 
-The repository for lel.news
+The repository for lel.news, a fake news thingy to check out some Jekyll features
 
 # A new article?
 

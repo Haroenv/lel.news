@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
-	Lel News
-	@author Wolf Philips
+	{{site.title}}
+	@author {{site.author}}
  -->
-<html lang="nl">
+<html lang="{{site.language}}">
 <head>
 	<title> {{site.title}} | {{page.title}} </title>
 	<meta charset="utf-8" />
@@ -19,11 +19,11 @@
 </head>
 <body>
 <header>
-<h1><a href="/">lel news</a></h1>
+<h1><a href="/">{{site.title}}</a></h1>
 <nav>
 	<ul>
 		<li><a href="/">home</a></li>
-		<li><a href="/a/">archief</a></li>
+		<li><a href="/a/">archive</a></li>
 	</ul>
 </nav>
 </header>

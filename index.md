@@ -2,4 +2,4 @@
 title: Home
 layout: index
 ---
-Welkom bij {{ site.title }}. Maak je borst maar nat vooor een spannende rit!
+Welcome to {{ site.title }}. This is the intro line to the site you see at the index.

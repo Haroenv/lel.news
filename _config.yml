@@ -4,3 +4,7 @@ title: lel news
 collections:
   a:
     output: true
+texts:
+  more: More like this!
+lang: en
+author: Haroen Viaene <hello@haroen.me>
