@@ -10,7 +10,7 @@ layout: default
 		{% for post in site.a | limit 6 %}
 			{% unless post.exclude %}
 			<li>
-				<a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
+				<a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
 				<p class="date">{{post.date | date: "%-d %B %Y %-H:%M" }}</p>
 				<p>{{ post.content | strip_html | truncatewords: 20 }}</p>
 			</li>

@@ -10,7 +10,7 @@ layout: default
 		{% for post in site.a %}
 			{% unless post.exclude %}
 			<li>
-				<a href="{{ post.url }}">{{ post.title }}</a>
+				<a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
 				<p class="date">{{post.date | date: "%-d %B %Y %-H:%M" }}</p>
 				<p>{{ post.content | markdownify | strip_html | truncatewords 30 }}</p>
 			</li>
